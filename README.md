@@ -44,15 +44,15 @@ Each platform has its own directory with specialized processing:
 
 ## 📊 Supported Platforms
 
-| Platform | Status | Input Data | Key Features |
-|----------|--------|------------|--------------|
-| **Netflix** | ✅ Active | `ViewingActivity.csv` | Timezone conversion, duration calculation |
-| **Amazon Prime TV** | ✅ Active | `PrimeVideo.ViewingHistory.csv` | EST timezone, bulk caching |
-| **Apple TV+** | ✅ Active | `TV App Favorites and Activity.json` | Atlantic timezone, episode formatting |
-| **Crave TV** | ✅ Active | JSON from web scraping | Series/movie distinction, rate limiting |
-| **Disney+** | ✅ Active | Manual CSV data | Watch time calculation, manual filtering |
-| **Google TV** | ✅ Active | Google Takeout data | Duration estimation, EST timezone |
-| **Get Outlook Events** | ✅ Active | Microsoft Graph API | Event retrieval, management, visualization |
+| Platform | Data Source | Data File Name |
+|----------|-------------|----------------|
+| **Netflix** | Download data | `ViewingActivity.csv` |
+| **Amazon Prime TV** | Download data | `PrimeVideo.ViewingHistory.csv` |
+| **Apple TV+** | Download data | `TV App Favorites and Activity.json` |
+| **Crave TV** | Manual website JSON | `watchHistory_pageNumber_0.json`, `graphql_0.json` |
+| **Disney+** | Scraping watchlist API | `watchlist_progress_raw_manual_dates.csv` |
+| **Google TV** | Download data | `Library.json`, `Purchase History.json` |
+| **Get Outlook Events** | Microsoft Graph API | N/A (direct API access) |
 
 ## 🎛️ Quick Start
 
@@ -107,26 +107,59 @@ media_tv_and_movies/
 │   ├── README.md                      # Netflix-specific documentation
 │   ├── create_events.py               # Netflix event creation
 │   ├── process_raw_data.py            # Netflix data processing
-│   └── test_modules.py                # Netflix testing utilities
+│   ├── test_modules.py                # Netflix testing utilities
+│   ├── ViewingActivity_example.csv    # Example data file
+│   ├── FilteredViewingActivity_example.csv # Example processed data
+│   └── create_events_log_example.txt  # Example log file
 ├── amazon_prime_tv/
 │   ├── README.md                      # Amazon Prime TV-specific documentation
-│   └── create_events.py               # Amazon Prime TV event creation
+│   ├── create_events.py               # Amazon Prime TV event creation
+│   ├── process_raw_data.py            # Amazon Prime TV data processing
+│   ├── test.py                        # Amazon Prime TV testing utilities
+│   ├── PrimeVideo.ViewingHistory_example.csv # Example data file
+│   ├── PrimeVideo.ViewingHistory_clean_example.csv # Example processed data
+│   └── create_event_log_example.txt   # Example log file
 ├── apple_tv_plus/
 │   ├── README.md                      # Apple TV+ specific documentation
-│   └── create_events.py               # Apple TV+ event creation
+│   ├── create_events.py               # Apple TV+ event creation
+│   ├── process_raw_data.py            # Apple TV+ data processing
+│   ├── TV App Favorites and Activity_example.json # Example data file
+│   ├── TV App Favorites and Activity_example.csv # Example processed data
+│   └── create_events_log_example.txt  # Example log file
 ├── crave_tv/
 │   ├── README.md                      # Crave TV-specific documentation
-│   └── create_events.py               # Crave TV event creation
+│   ├── create_events.py               # Crave TV event creation
+│   ├── process_raw_data.py            # Crave TV data processing
+│   ├── watchHistory_pageNumber_0_example.json # Example data file
+│   ├── graphql_0_example.json         # Example data file
+│   ├── raw_data_clean_example.csv     # Example processed data
+│   └── create_events_log_example.txt  # Example log file
 ├── disney_plus/
 │   ├── README.md                      # Disney+ specific documentation
-│   └── create_events.py               # Disney+ event creation
+│   ├── create_events.py               # Disney+ event creation
+│   ├── get_watchlist.py               # Disney+ API wrapper
+│   ├── update_manual_watchlist.py     # Manual datetime management
+│   ├── watchlist_progress_raw_manual_dates_example.csv # Example data file
+│   ├── create_events_log_example.txt  # Example log file
+│   └── Disney-Plus-api-wrapper-master/ # Third-party Disney+ API wrapper
+│       ├── src/pydisney/              # Disney+ API library
+│       ├── LICENSE                    # API wrapper license
+│       └── README.md                  # API wrapper documentation
 ├── google_tv/
 │   ├── README.md                      # Google TV-specific documentation
-│   └── create_events.py               # Google TV event creation
+│   ├── create_events.py               # Google TV event creation
+│   ├── create_1_library_csv.py        # Convert Library.json to CSV
+│   ├── create_2_purchase_history_csv.py # Convert Purchase History.json to CSV
+│   ├── create_3_combine_library_purch_hist.py # Merge CSV files
+│   ├── Library_example.json           # Example data file
+│   ├── Library_example.csv            # Example converted data
+│   ├── Purchase History_example.json  # Example data file
+│   ├── Purchase History_example.csv   # Example converted data
+│   ├── combine_library_purch_hist_example.csv # Example merged data
+│   └── create_events_log_example.txt  # Example log file
 └── get_outlook_events/
     ├── README.md                      # Get Outlook Events documentation
-    ├── get_events.py                  # Event retrieval and management
-    └── utility/                       # Utility scripts for editing and visualization
+    └── get_events.py                  # Event retrieval and management
 ```
 
 ## 📖 Documentation
