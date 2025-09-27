@@ -1,12 +1,6 @@
-# Media TV and Movies - Calendar Event Creation System
+# Media TV and Movies - Stremaing Service Data and Outlook Calendar Event Creation
 
-A comprehensive, harmonized system for creating Outlook calendar events from media platform viewing data. This repository consolidates event creation functionality for Netflix, Amazon Prime TV, Apple TV+, Crave TV, Disney+, and Google TV into a unified, maintainable architecture.
-
-This includes instructions about how to get the data from each of the streaming services that you can use to create the Outlook calendar events or use for your own purposes.
-
-## 🎯 Overview
-
-This system processes viewing history data from multiple media platforms and creates organized calendar events in Outlook, providing a centralized view of your media consumption across all platforms.
+This contains instructions about how to get the data from a bunch of streaming services (Netflix, Amazon Prime, Apple TV+, Crave TV, Disney+, and Google TV) so you can use the data for your own purposes but this project focuses on using the data to create Outlook calendar events for the shows and movies you have watched.
 
 ## 🏗️ Architecture
 
