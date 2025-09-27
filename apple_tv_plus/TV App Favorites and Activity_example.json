@@ -1,0 +1,57 @@
+{
+  "events" : [ 
+    {
+        "stored_event" : {
+          "bundle_id" : "com.apple.quad",
+          "brand_id" : "tvs.sbd.9001",
+          "external_playable_id" : "1231319469",
+          "timestamp" : 1723861596028,
+          "play_cursor_in_milliseconds" : 7301982,
+          "media_length_in_milliseconds" : 7355000,
+          "is_done" : true,
+          "media_type" : "MOVIE",
+          "canonical_id" : "umc.cmc.fqu5f5pvxiov1xqp3946hsjg",
+          "allowlisted_headers" : [ {
+            "key" : "tv-pldfltcid",
+            "value" : "9d78721fe55647cdadb199ad0daa3c10007"
+          }, {
+            "key" : "utsdc",
+            "value" : "asrdc"
+          }, {
+            "key" : "xp_ab",
+            "value" : "1#NyCxKBD+-2+sIDxMhm01#Zh4zkDd+-2+IsaYQfw00#vYb0LBw+-2+tG1Kw7I01#fNPb5Km+-2+xSb5Dsb07#hNJiWMm+-2+mkgoUvR00#Tketb5x+-2+yEh8DLq00#WTckLqP+-2+Dt861s_02#of2rI6Z+-2+_Y1JHzu02#tBc9hUt+-2+8TK36lX02#WqjkRLH+-2+J2EmvwS03#HnW1xce+-2+Tf5Kjqz01"
+          } ],
+          "client_is_done" : true,
+          "statistics" : {
+            "first_played_timestamp" : 1723848909503,
+            "last_played_timestamp" : 1723861596028,
+            "max_progress_percentage" : 99.27916,
+            "is_ever_done" : true,
+            "repeat_count" : 0,
+            "start_play_event_statistics" : {
+              "count" : 3,
+              "latest_event_timestamp" : 1723849041124
+            },
+            "end_play_event_statistics" : {
+              "count" : 8,
+              "latest_event_timestamp" : 1723861596028
+            }
+          },
+          "additional_attributes" : {
+            "device_info" : [ {
+              "platform" : "vz",
+              "manufacturer" : "Roku",
+              "last_played_timestamp" : 1723861596028
+            } ]
+          },
+          "storefront_id" : 143441
+        },
+        "event_interpretation" : {
+          "human_readable_media_description" : "Alien: Covenant (Directed by: [Ridley Scott], Released in: [2017])",
+          "human_readable_timestamp" : "Sat Aug 17 02:26:36 GMT 2024",
+          "human_readable_brand" : "iTunes"
+        }
+      }
+   ],
+ .... 
+ more redacted

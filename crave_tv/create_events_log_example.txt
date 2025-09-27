@@ -1,0 +1,13 @@
+2024-08-05 13:01:59,398 - INFO - Starting the process of reading CSV data and creating events
+2024-08-05 13:01:59,399 - INFO - Obtaining access token from Microsoft Graph API
+2024-08-05 13:02:00,117 - INFO - Access token obtained successfully
+2024-08-05 13:02:00,131 - INFO - CSV data loaded successfully with 505 records
+2024-08-05 13:02:00,132 - INFO - Data after removing blank rows: 505 records
+2024-08-05 13:02:00,134 - INFO - Data after removing rows with missing datetimes: 505 records
+2024-08-05 13:02:00,139 - INFO - Data after ensuring valid datetimes: 505 records
+2024-08-05 13:02:00,140 - INFO - Data after filtering short durations: 466 records
+2024-08-05 13:02:00,140 - INFO - Adjusting timezones for the records
+2024-08-05 13:02:00,488 - INFO - Last event date retrieved: 2015-08-26
+2024-08-05 13:03:43,954 - INFO - Event created successfully for eps3.7_dont-delete-me.ko-Mr. Robot - Season 3
+2024-08-05 13:03:44,750 - INFO - Updated log with latest event: 2015-08-27 - eps3.7_dont-delete-me.ko-Mr. Robot - Season 3
+2024-08-05 13:03:44,751 - INFO - Process completed successfully.

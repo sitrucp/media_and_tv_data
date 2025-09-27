@@ -1,0 +1,4 @@
+show_name,episode_name,season,episode,start_datetime_EST,duration_hh_mm_ss,end_datetime_EST,media_type,start_timestamp,completed,watch_time_seconds,completed_percent,contentId,mediaId,language
+The Mandalorian,Chapter 1: The Mandalorian,1,1,6/28/2025 17:00,01:40:00,6/28/2025 18:40,movie,,yes,6000,100,example_content_id_1,example_media_id_1,en
+Ahsoka,Part One: Master and Apprentice,1,1,6/30/2025 19:00,00:56:00,6/30/2025 19:56,series,,yes,3360,100,example_content_id_2,example_media_id_2,en
+Loki,Glorious Purpose,1,1,7/1/2025 20:00,00:52:00,7/1/2025 20:52,series,,yes,3120,100,example_content_id_3,example_media_id_3,en

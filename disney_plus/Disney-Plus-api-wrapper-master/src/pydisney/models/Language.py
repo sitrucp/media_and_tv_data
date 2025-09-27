@@ -1,0 +1,32 @@
+from enum import Enum
+
+
+class Language(Enum):
+    Czech = "cs"
+    Danish = "da"
+    German = "de"
+    English_UK = "en-GB"
+    English_US = "en"
+    Spanish_ES = "es-ES"
+    Spanish_LatinAmerica = "es-419"
+    French_FR = "fr-FR"
+    French_CA = "fr-CA"
+    Italian = "it"
+    Hungarian = "hu"
+    Dutch = "nl"
+    Norwegian = "no"
+    Polish = "pl"
+    Portuguese_PT = "pt-PT"
+    Portuguese_BR = "pt-BR"
+    Romanian = "ro"
+    Slovak = "sk"
+    Finnish = "fi"
+    Swedish = "sv"
+    Turkish = "tr"
+    Greek = "el"
+    Korean = "ko"
+    Chinese_Simplified = "zh-Hans"
+    Chinese_Traditional = "zh-Hant"
+    Chinese_HK = "zh-HK"
+    Japanese = "ja"
+
