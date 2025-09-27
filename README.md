@@ -1,4 +1,4 @@
-# Media TV and Movies - Stremaing Service Data and Outlook Calendar Event Creation
+# Media TV and Movies - Streaming Service Data and Outlook Calendar Event Creation
 
 This contains instructions about how to get the data from a bunch of streaming services (Netflix, Amazon Prime, Apple TV+, Crave TV, Disney+, and Google TV) so you can use the data for your own purposes but this project focuses on using the data to create Outlook calendar events for the shows and movies you have watched.
 
